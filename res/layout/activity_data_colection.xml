@@ -1,0 +1,171 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Question 1: What did I eat and drink today? -->
+        <TextView
+            android:id="@+id/question1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="What did I eat and drink today?" />
+
+        <!-- Text box for answering Question 1 -->
+        <EditText
+            android:id="@+id/answer1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Your answer here" />
+
+        <!-- Question 2: What medicines did I take today? -->
+        <TextView
+            android:id="@+id/question2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="What medicines did I take today?" />
+
+        <!-- CheckBoxes for answering Question 2 -->
+        <CheckBox
+            android:id="@+id/checkbox2_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Entyvio vial 300mg" />
+
+        <CheckBox
+            android:id="@+id/checkbox2_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Raffassal 1gr" />
+
+        <CheckBox
+            android:id="@+id/checkbox2_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Iron" />
+
+        <CheckBox
+            android:id="@+id/checkbox2_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calcium" />
+
+        <CheckBox
+            android:id="@+id/checkbox2_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vitamin D" />
+
+        <!-- Question 3: How am I feeling today? -->
+        <TextView
+            android:id="@+id/question3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="How am I feeling today?" />
+
+        <!-- Spinner for answering Question 3 -->
+        <Spinner
+            android:id="@+id/spinner3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/rating_values"
+            android:prompt="@string/rating_prompt" />
+
+        <!-- Text box for additional details on Question 3 -->
+        <EditText
+            android:id="@+id/detail3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Additional details" />
+
+        <!-- Question 4: What sport did I do? -->
+        <TextView
+            android:id="@+id/question4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="What sport did I do?" />
+
+        <!-- CheckBoxes for answering Question 4 -->
+        <CheckBox
+            android:id="@+id/checkbox4_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No" />
+
+        <CheckBox
+            android:id="@+id/checkbox4_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Run" />
+
+        <CheckBox
+            android:id="@+id/checkbox4_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weight lifting" />
+
+        <CheckBox
+            android:id="@+id/checkbox4_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Other" />
+
+        <!-- Question 5: How much did you sleep last night? -->
+        <TextView
+            android:id="@+id/question5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="How much did you sleep last night?" />
+
+        <!-- Spinner for answering Question 5 -->
+        <Spinner
+            android:id="@+id/spinner5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/rating_values"
+            android:prompt="@string/rating_prompt" />
+
+        <!-- Question 6: Did you sleep well at night? -->
+        <TextView
+            android:id="@+id/question6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Did you sleep well at night?" />
+
+        <!-- CheckBoxes for answering Question 6 -->
+        <CheckBox
+            android:id="@+id/checkbox6_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes" />
+
+        <CheckBox
+            android:id="@+id/checkbox6_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No" />
+
+        <!-- Finish Button -->
+        <Button
+            android:id="@+id/finishButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:onClick="finishClicked"
+            android:text="Finish" />
+
+        <Button
+            android:id="@+id/exportButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:onClick="exportData"
+            android:text="Export to Text File" />
+
+    </LinearLayout>
+</ScrollView>
